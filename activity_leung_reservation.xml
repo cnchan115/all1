@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popUp_position"
+    tools:context="com.example.cherrychan.myapplication.LeungReservation">
+
+    <ImageView
+        android:id="@+id/leung_1200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/leung_1200"
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="192dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/leung_s_creation_have_provided_more_than_a_thousand_wedding_decoration_services_for_our_customers_since_2007_their_creative_idea_innovative_presentation_and_preciseness_preparing_for_each_job_entitled_them_to_win_recognition_from_their_customers_and_industries_in_2013_they_were_awarded_the_best_new_award_venue_decoration_from_wedding_magazine_wedding_award_2013_they_have_a_woodwork_team_craft_team_and_floral_team_each_team_is_professionally_trained_have_experience_and_are_familiar_to_handle_all_venues"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_no_3590_3129"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="205dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_rm_324_beverley_commercial_centre_87_105_chatham_road_south_tsim_sha_tsui_kowloon_hong_kong"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="275dp"
+        android:layout_height="19dp"
+        android:text="@string/please_fill_in_the_followings_for_reservation"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="271dp"
+        android:layout_marginStart="26dp"
+        android:layout_above="@+id/editText6"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="299dp"
+        android:layout_above="@+id/editText7"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginBottom="12dp"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/date_of_event_dd_mm_yyyy"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="342dp"
+        android:layout_above="@+id/editText5"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_marginBottom="14dp"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="427dp"
+        android:layout_above="@+id/editText4"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginBottom="12dp"
+        android:layout_alignEnd="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_submit"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="@string/email"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="377dp"
+        android:layout_alignEnd="@+id/editText5" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:text="@string/reset"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="478dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="478dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText4" />
+
+</RelativeLayout>
