@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/popUp_position"
+    tools:context="com.example.cherrychan.myapplication.MrRightReservation">
+
+
+    <ImageView
+        android:id="@+id/mrright_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/mrright_logo"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginEnd="5dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="192dp"
+        android:text="MR. RIGHT Wedding and Event is your personalized wedding designer, an experienced event planner who specialized in theme design. They arrange ideal venues, gorgeous decoration to create your one of a kind wedding. They stress to perfect your BIG day as it is so important to you. This is why a wedding planner meant to be here for you and make your dream come true. Just let them handle all the work, all you have to do is to ENJOY your wedding."
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_above="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2316_2823"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="205dp"
+        android:layout_above="@+id/textView4"
+        android:layout_toStartOf="@+id/btn_reset" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flat_c_21_f_kimberley_26_26_kimberley_road_tsim_sha_tsui_kowloon_hong_kong"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="275dp"
+        android:layout_height="19dp"
+        android:text="@string/please_fill_in_the_followings_for_reservation"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="271dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="7dp"
+        android:layout_above="@+id/editText6"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="299dp"
+        android:layout_above="@+id/editText7"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginBottom="12dp"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/date_of_event_dd_mm_yyyy"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="342dp"
+        android:layout_above="@+id/editText5"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_marginBottom="14dp"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="427dp"
+        android:layout_above="@+id/editText4"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginBottom="12dp"
+        android:layout_alignEnd="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_submit"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="@string/email"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="377dp"
+        android:layout_alignEnd="@+id/editText5" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:text="@string/reset"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="478dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="83dp"
+        android:layout_height="36dp"
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="478dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText4" />
+
+</RelativeLayout>
