@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<past>
+    <record
+        date="2014_08_06"
+        district="Tsuen Wan"
+        venue="Panda Hotel" />
+    <record
+        date="2014_09_07"
+        district="Central"
+        venue="Four Seasons HK"/>
+    <record
+        date="2014_12_08"
+        district="Causeway Bay"
+        venue="Crowne Plaza"/>
+    <record
+        date="2015_08_09"
+        district="Tsim Sha Tsui"
+        venue="Marco Polo"/>
+    <record
+        date="2014_08_10"
+        district="Tsim Sha Tsui"
+        venue="Marco Polo"/>
+    <record
+        date="2014_08_11"
+        district="Tsim Sha Tsui"
+        venue="Marco Polo"/>
+    <record
+        date="2017_08_12"
+        district="Tsim Sha Tsui"
+        venue="Marco Polo"/>
+    <record
+        date="2014_08_13"
+        district="Tsuen Wan"
+        venue="Panda Hotel"/>
+    <record
+        date="2014_08_14"
+        district="Sha Tin"
+        venue="Regal Hotel"/>
+    <record
+        date="2014_08_15"
+        district="Sha Tin"
+        venue="Regal Hotel"/>
+    <record
+        date="2016_11_22"
+        district="Sha Tin"
+        venue="Hyatt Regency"/>
+</past>

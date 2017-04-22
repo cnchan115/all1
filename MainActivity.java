@@ -45,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        text = (TextView) findViewById(R.id.textView7);
+
+        text.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, WeddingDataset.class);
+                startActivity(intent);
+            }
+        });
+
         GoToSubmitActivity = (Button)findViewById(R.id.btn_submit);
 
         GoToSubmitActivity.setOnClickListener(new View.OnClickListener() {
