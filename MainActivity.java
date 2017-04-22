@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageButton myImageButton;
 
     Button GoToSubmitActivity;
+
+    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +28,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intentLoadNewActivity = new Intent(MainActivity.this, InesWeddingReservation.class);
+                Intent intentLoadNewActivity = new Intent(MainActivity.this, ReadDataActivity.class);
                 startActivity(intentLoadNewActivity);
+            }
+        });
+
+        text = (TextView) findViewById(R.id.textView);
+
+        text.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, XmlParser.class);
+                startActivity(intent);
             }
         });
 
@@ -39,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Intent code for open new activity through intent.
 
-                Intent intent = new Intent(MainActivity.this, LeungReservation.class);
+                Intent intent = new Intent(MainActivity.this, MrRightReservation.class);
                 startActivity(intent);
 
             }
